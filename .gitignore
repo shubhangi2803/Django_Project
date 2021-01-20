@@ -149,3 +149,4 @@ dmypy.json
 # profiling data
 .prof
 
+.db.sqlite3
