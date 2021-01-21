@@ -150,3 +150,5 @@ dmypy.json
 .prof
 
 .db.sqlite3
+/static
+/media
