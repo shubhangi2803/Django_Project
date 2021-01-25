@@ -48,6 +48,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -82,11 +83,12 @@ WSGI_APPLICATION = 'MyHomeFinder.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'MyHomeFinderDB',
-        'USER': 'postgres',
-        'PASSWORD': '12345',
-        'HOST': 'localhost'
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': '',
+        'USER': 'gkdjctnfbmtgqs',
+        'PASSWORD': '0fa8f04d6f6eeee3befaf2d5fea4a78c48b38070fdcd8db9ab6839c60b115318',
+        'HOST': 'ec2-18-205-122-145.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
@@ -147,3 +149,7 @@ try:
     from .local_settings import *
 except ImportError:
     pass
+
+
+# Whitenoise settings
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
