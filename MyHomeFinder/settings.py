@@ -26,7 +26,7 @@ SECRET_KEY = 'p#h*a#2%7=0a*aub1&fvq8sde65uo0t7=^yqf@6p!w27gpf2d7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['myhomefinder.herokuapp.com']
+ALLOWED_HOSTS = ['myhomefinder.herokuapp.com','0.0.0.0', 'localhost', '127.0.0.1',]
 
 
 # Application definition
