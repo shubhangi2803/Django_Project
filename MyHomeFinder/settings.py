@@ -26,7 +26,7 @@ SECRET_KEY = 'p#h*a#2%7=0a*aub1&fvq8sde65uo0t7=^yqf@6p!w27gpf2d7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['myhomefinder.herokuapp.com']
 
 
 # Application definition
@@ -132,7 +132,7 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'MyHomeFInder/static')
+    os.path.join(BASE_DIR, 'MyHomeFinder/static')
 ]
 
 # Media Folder Settings
